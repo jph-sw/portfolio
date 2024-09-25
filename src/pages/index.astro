@@ -7,76 +7,56 @@ let time = new Date().toLocaleTimeString();
 ---
 
 <Layout title="1π">
-    <main class="flex justify-center w-full p-12">
-        <div class="w-full lg:w-1/2 min-h-60">
-            <div class="flex justify-between border-b border-[#5e5e5e]">
-                <h1>[jan@1π.com] home</h1>
-                <div class="flex gap-2">
-                    <a
-                        href="https://x.com/jph865599075996"
-                        class="text-[#48E5C2]">x</a
-                    >
-                    <a href="https://github.com/jph-sw" class="text-[#48E5C2]"
-                        >gh</a
-                    >
-                </div>
-            </div>
-            <p class="py-4">Hi, my name is Jan</p>
-            <div class="py-4">
-                [jan@1π.com] blogs<div class="flex gap-2">
-                    <a
-                        href="https://lernzettel.vercel.app"
-                        class="text-[#333333]">Lernzettel</a
-                    >
-                </div>
-            </div>
-            <div class="py-4">
-                <h2>[jan@1π.com] projects</h2>
-                <div class="flex flex-wrap py-2 gap-2">
-                    <div class="border h-32 w-1/3 p-1 border-[#5e5e5e]">
-                        <a
-                            href="https://github.com/jph-sw/blossom"
-                            class="text-[#333333] underline-offset-2 underline"
-                        >
-                            Blossom
-                        </a>
-                        <p>
-                            A landing page built with
-                            <a href="https://astro.dev" class="text-neutral-400"
-                                >astro</a
-                            >
-                        </p>
-                    </div>
-                    <div class="border h-32 w-1/3 p-1 border-[#5e5e5e]">
-                        <a
-                            href="https://jph-sw.github.io/bookmarks/"
-                            class="text-[#333333] underline-offset-2 underline"
-                        >
-                            Bookmarks
-                        </a>
-                        <p>My personal bookmark collection</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-full flex justify-center">
-                <img src="/cow.jpg" class="border rounded-full" />
-            </div>
+  <main class="flex justify-center w-full">
+    <div class="w-full lg:w-1/2 min-h-60">
+      <div class="flex justify-between border-b border-[#5e5e5e]">
+        <h1>[jan@1π.com] home</h1>
+        <div class="flex gap-2">
+          <a href="https://x.com/jph865599075996" class="text-[#48E5C2]">x</a>
+          <a href="https://github.com/jph-sw" class="text-[#48E5C2]">gh</a>
         </div>
-        <div class="fixed bottom-0 flex justify-between w-full">
+      </div>
+      <p class="py-4">Hi, my name is Jan</p>
+      <div class="py-4">
+        [jan@1π.com] blogs<div class="flex gap-2">
+          <a href="https://lernzettel.vercel.app" class="text-[#333333]"
+            >Lernzettel</a
+          >
+        </div>
+      </div>
+      <div class="py-4">
+        <h2>[jan@1π.com] projects</h2>
+        <div class="py-2 gap-2">
+          <div class="h-32 w-1/3 p-1 border-[#5e5e5e]">
             <a
-                style="cursor: pointer"
-                class="text-sm"
-                onclick="javascript: window.location = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';"
-                >light mode</a
+              href="https://jph-sw.github.io/bookmarks/"
+              class="text-[#333333] underline-offset-2 underline"
             >
-
-            <Clock />
+              Bookmarks
+            </a>
+            <p>My personal bookmark collection</p>
+          </div>
         </div>
-    </main>
+      </div>
+      <div class="w-full flex justify-center">
+        <img src="/cow.jpg" class="border rounded-full" />
+      </div>
+    </div>
+    <div class="fixed bottom-0 flex justify-between w-full">
+      <a
+        style="cursor: pointer"
+        class="text-sm"
+        onclick="javascript: window.location = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';"
+        >light mode</a
+      >
+
+      <Clock />
+    </div>
+  </main>
 </Layout>
 
 <style>
-    main {
-        font-size: medium;
-    }
+  main {
+    font-size: medium;
+  }
 </style>

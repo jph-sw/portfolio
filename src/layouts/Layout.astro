@@ -1,7 +1,7 @@
 ---
 import "@fontsource-variable/jetbrains-mono";
 interface Props {
-    title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -9,47 +9,44 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="description" content="Astro description" />
-        <meta name="viewport" content="width=device-width" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <script>
-            var t = setInterval(function () {
-                if (window.goatcounter && window.goatcounter.visit_count) {
-                    clearInterval(t);
-                    window.goatcounter.visit_count({ append: "body" });
-                }
-            }, 100);
-        </script>
-        <script
-            data-goatcounter="https://jph.goatcounter.com/count"
-            async
-            src="//gc.zgo.at/count.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      var t = setInterval(function () {
+        if (window.goatcounter && window.goatcounter.visit_count) {
+          clearInterval(t);
+          window.goatcounter.visit_count({ append: "body" });
+        }
+      }, 100);
+    </script>
+    <script
+      data-goatcounter="https://jph.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"></script>
 
-        <meta name="generator" content={Astro.generator} />
-        <title>{title}</title>
-    </head>
-    <body>
-        <slot />
-    </body>
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 <style is:global>
-    :root {
-        --accent: 136, 58, 234;
-        --accent-light: 224, 204, 250;
-        --accent-dark: 49, 10, 101;
-        --accent-gradient: linear-gradient(
-            45deg,
-            rgb(var(--accent)),
-            rgb(var(--accent-light)) 30%,
-            white 60%
-        );
-    }
-    html {
-        font-family: "JetBrains Mono", monospace;
-        background-color: #f3d3bd;
-        color: #5e5e5e;
-        border-color: #5e5e5e !important;
-    }
+  :root {
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(
+      45deg,
+      rgb(var(--accent)),
+      rgb(var(--accent-light)) 30%,
+      white 60%
+    );
+  }
+  html {
+    font-family: "JetBrains Mono", monospace;
+  }
 </style>
