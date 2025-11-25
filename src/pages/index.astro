@@ -1,26 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Clock from "../components/Clock.astro";
+import Homepage from "../components/homepage";
 ---
 
 <Layout title="1π">
-    <main class="lg:flex">
-        <div class="lg:h-dvh container mx-auto px-12 lg:px-32 pt-24 lg:pt-48">
-            <h1 class="text-4xl font-semibold">Jan Philipps</h1>
-            <p class="">webdev apprentice</p>
-            <div class="flex gap-2">
-                <a href="https://x.com/jph865599075996" class="text-[#48E5C2]"
-                    >x</a
-                >
-                <a href="https://github.com/jph-sw" class="text-[#48E5C2]">gh</a
-                >
-                <a href="https://letterboxd.com/jphsw/" class="text-[#48E5C2]"
-                    >lb</a
-                >
-            </div>
-        </div>
-        <img src="/library.png" class="lg:h-dvh object-contain" />
-    </main>
+    <Homepage client:only />
 </Layout>
 
 <style>
