@@ -16,7 +16,7 @@ const Homepage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-ink text-paper font-sans selection:bg-white selection:text-ink relative overflow-x-hidden">
-      <div className="fixed inset-0 opacity-[0.15] pointer-events-none z-0 bg-[url('/library.png')]"></div>
+      <div className="fixed inset-0 opacity-[0.20] pointer-events-none z-0 bg-[url('/library.png')]"></div>
 
       <nav className="fixed top-0 left-0 w-full z-40 bg-ink/80 backdrop-blur-sm border-b border-neutral-800">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
