@@ -52,7 +52,7 @@ const Homepage: React.FC = () => {
 
       {isNavOpen && (
         <div className="fixed inset-0 z-30 bg-ink flex flex-col items-center justify-center gap-8 font-mono text-2xl">
-          {["About", "Projects", "Skills", "Contact"].map((item) => (
+          {["About", "Projects", "Skills", "Contact"].map((item: string) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
@@ -111,7 +111,7 @@ const Homepage: React.FC = () => {
 
       <section
         id="skills"
-        className="py-24 px-6 border-t border-neutral-900 bg-neutral-950"
+        className="py-24 px-6 z-1 relative border-t border-neutral-900 bg-neutral-950/60"
       >
         <div className="max-w-7xl mx-auto">
           <div className="flex items-baseline gap-4 mb-12">
@@ -123,7 +123,7 @@ const Homepage: React.FC = () => {
             {SKILLS.map((skill, index) => (
               <div
                 key={index}
-                className="border border-neutral-800 p-4 hover:bg-neutral-900 hover:border-neutral-600 transition-all cursor-crosshair group"
+                className="border z-10 bg-neutral-900/90 border-neutral-800 p-4 hover:bg-neutral-900 hover:border-neutral-600 transition-all cursor-crosshair group"
               >
                 <Code
                   size={20}
@@ -205,7 +205,7 @@ const Homepage: React.FC = () => {
 
       <section
         id="contact"
-        className="py-24 px-6 border-t border-neutral-900 bg-neutral-950"
+        className="py-24 px-6 border-t border-neutral-900 bg-neutral-950/60 relative"
       >
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
           <div>
