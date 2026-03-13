@@ -70,11 +70,7 @@ const Homepage: React.FC = () => {
       >
         <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1 space-y-8">
-            <div className="space-y-2">
-              <h2 className="font-mono text-sm text-neutral-500 mb-4 tracking-widest">
-                STATUS: APPRENTICE //{" "}
-                <span className="text-green-500">ONLINE</span>
-              </h2>
+            <div>
               <h1
                 className="text-6xl md:text-8xl font-bold tracking-tighter leading-[0.9] glitch-text"
                 data-text={PERSONAL_INFO.name}
