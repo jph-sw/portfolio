@@ -2,10 +2,13 @@ import { defineConfig, fontProviders } from "astro/config";
 
 import tailwindcss from "@tailwindcss/vite";
 
+import cloudflare from "@astrojs/cloudflare";
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [],
   site: "https://1π.com",
+
   fonts: [
     {
       provider: fontProviders.local(),
@@ -22,7 +25,10 @@ export default defineConfig({
       },
     },
   ],
+
   vite: {
     plugins: [tailwindcss()],
   },
+
+  adapter: cloudflare(),
 });

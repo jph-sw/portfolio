@@ -7,10 +7,12 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "generate-types": "wrangler types"
   },
   "dependencies": {
     "@astrojs/check": "^0.8.1",
+    "@astrojs/cloudflare": "^14.1.3",
     "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.1.1",
     "lucide-react": "^0.554.0",
@@ -19,5 +21,8 @@
   },
   "allowScripts": {
     "esbuild": true
+  },
+  "devDependencies": {
+    "wrangler": "^4.112.0"
   }
 }
