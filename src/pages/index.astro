@@ -4,17 +4,32 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="1π">
     <div class="">
-      <h1 style="font-weight: 900;">Jan Philipps</h1>
-      <p>I'm a 19 year old Software Engineer based in Germany.</p>
-      <p>
-          My passion for computer science started in 2018, <br />I was 11 years old when
-        I decided that software is my life.
+        <div class="flex gap-2">
+            <div class="h-40 w-40 border"/>
+            <div>
+            <h1 class="text-3xl font-semibold">Jan Philipps</h1>
+                <p>Software Engineer based in Germany</p>
+            <div class="pt-4 flex gap-2">
+                <a class="button" href="mailto:jan@philipps.io">Email</a>
+                <a class="button">Github</a>
+                <a class="button">LinkedIn</a>
+            </div>
+            </div>
+        </div>
+      <p class="pt-4">
+        My passion for computer science started in 2018. <br />Software has changed a lot since then and I try to do the same.
       </p>
       <p></p>
-      <section style="padding-top: 1em;">
-          <h2 style="font-weight: 900;">blog</h2>
+      <section class="pt-4">
+          <h2 class="text-2xl font-semibold">blog</h2>
           <div>
-              <a href="/ai" style="text-decoration: underline;">2026-05-28 <strong>my view on ai and it's problems</strong></a>
+              <a href="/ai" class="hover:underline">2026-05-28 <strong>my view on ai and it's problems</strong></a>
+          </div>
+      </section>
+      <section class="pt-4">
+          <h2 class="text-2xl font-semibold">projects</h2>
+          <div>
+              <span class="text-neutral-400 text-xs">// hopefully this won't be empty forever ;)</span>
           </div>
       </section>
     </div>

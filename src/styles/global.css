@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.button {
+  @apply border border-neutral-500 rounded-lg px-2 py-0.5 cursor-pointer hover:underline;
+}

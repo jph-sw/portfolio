@@ -1,10 +1,28 @@
-import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
+import { defineConfig, fontProviders } from "astro/config";
 
-import react from "@astrojs/react";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), react()],
-  site: "https://1π.com"
+  integrations: [],
+  site: "https://1π.com",
+  fonts: [
+    {
+      provider: fontProviders.local(),
+      name: "Custom",
+      cssVariable: "--font-noto-mono",
+      options: {
+        variants: [
+          {
+            weight: 400,
+            style: "normal",
+            src: ["./src/assets/fonts/NotoSansMono-VariableFont_wdth,wght.ttf"],
+          },
+        ],
+      },
+    },
+  ],
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
