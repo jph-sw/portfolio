@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "portfolio",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -11,12 +11,13 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.8.1",
-    "@astrojs/tailwind": "^6.0.2",
-    "@fontsource-variable/jetbrains-mono": "^5.0.21",
     "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.1.1",
     "lucide-react": "^0.554.0",
     "tailwindcss": "^4.3.3",
     "typescript": "^5.5.3"
+  },
+  "allowScripts": {
+    "esbuild": true
   }
 }
