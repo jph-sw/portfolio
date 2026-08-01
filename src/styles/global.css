@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 .button {
-  @apply border border-neutral-500 rounded-lg px-2 py-0.5 cursor-pointer hover:underline;
+  @apply border border-neutral-500 rounded-lg px-2 py-0.5 cursor-pointer hover:underline bg-white text-black dark:bg-neutral-900 dark:text-neutral-100;
 }
