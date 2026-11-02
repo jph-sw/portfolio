@@ -29,16 +29,18 @@ const { title } = Astro.props;
             })();
         </script>
     </head>
-    <body class="p-2 bg-white text-black dark:bg-neutral-900 dark:text-neutral-100">
-        <button
-            id="theme-toggle"
-            class="button fixed top-2 right-2 text-xs"
-            aria-label="Toggle theme"
-        >
-            <span class="dark:hidden">dark</span>
-            <span class="hidden dark:inline">light</span>
-        </button>
-        <slot />
+    <body class="p-2 bg-white text-black dark:bg-neutral-900 dark:text-neutral-100 w-full flex justify-center">
+        <div class="max-w-6xl w-full">
+            <button
+                id="theme-toggle"
+                class="button fixed top-2 right-2 text-xs"
+                aria-label="Toggle theme"
+            >
+                <span class="dark:hidden">dark</span>
+                <span class="hidden dark:inline">light</span>
+            </button>
+            <slot />
+        </div>
         <script is:inline>
             document.getElementById("theme-toggle").addEventListener("click", function () {
                 const isDark = document.documentElement.classList.toggle("dark");
